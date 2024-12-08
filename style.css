@@ -1,0 +1,82 @@
+/* Đặt chung cho trang */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+  background-image: linear-gradient(#a7c877, #6e8251, #1f221d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: 72px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/* Tracklist container */
+.container {
+  width: 90%; /* Chiều rộng tổng thể */
+  display: flex;
+  justify-content: center;
+}
+
+.tracklist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột đều nhau */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  width: 100%;
+}
+
+/* Cột tracklist */
+.tracklist div {
+  text-align: left; /* Văn bản căn trái */
+}
+
+.tracklist ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  counter-reset: item; /* Đảm bảo đánh số */
+}
+
+.tracklist li {
+  margin: 5px 0;
+}
+
+footer img {
+  font-size: 700px;
+  height: 300px;
+}
+.close-spacing h2 h1 {
+  letter-spacing: -3px; /* Giảm khoảng cách giữa các chữ */
+}
+.close-spacing-2 {
+  letter-spacing: -5px;
+  font-size: 40px;
+}
